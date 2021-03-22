@@ -139,4 +139,6 @@ docker system prune # 削除するかどうかの確認があるが「y」を入
 	* 懸念点
 		* DjangoとFirebaseの連携方法
 		* Djangoのスケジュール実行方法
+			* 以下参照
+			[https://office54.net/python/django/manage-background](https://office54.net/python/django/manage-background)
 		* 

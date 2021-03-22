@@ -7,8 +7,8 @@
 	// Update the 'dockerComposeFile' list if you have more compose files or use different names.
 	// The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
 	"dockerComposeFile": [
-		"../docker-compose.yml",
-		"docker-compose.yml"
+		"../docker-compose-debug.yml",
+		"docker-compose-debug.yml"
 	],
 
 	// The 'service' property is the name of the service for the container that VS Code should
@@ -21,11 +21,16 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"terminal.integrated.shell.linux": null
+		"terminal.integrated.shell.linux": null,
+		"python.pythonPath": "/usr/local/bin/python",
+        "python.languageServer": "Pylance",
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": []
+	"extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+    ],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
