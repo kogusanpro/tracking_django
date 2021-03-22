@@ -1,4 +1,4 @@
-# tracking_django
+# Tracking_Django
 
 #### 開発環境構築手順
 * リポジトリをローカルファイルに保存
